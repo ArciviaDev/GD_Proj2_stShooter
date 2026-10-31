@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55acf6011891301458a2c736f3dd2eb3, type: 3}
+  m_Name: FolderColorSettings_Perso_Minec
+  m_EditorClassIdentifier: FolderColor.Editor::FolderColor.Editor.FolderColorDatabase
+  Mode: 1
+  UserId: 
+  IconEntries:
+  - Guid: 4fbfce59c9b46d14aa131140d5facbcf
+    IconPath: FavoryFolder.png
+    IconColor: {r: 0, g: 0.065570354, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: a7805f6c060d9b142bc83cd1a67dbd15
+    IconPath: ShaderFolder.png
+    IconColor: {r: 0.99518895, g: 1, b: 0, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 97b7fbc70ff65d944bc0b1f963c57cea
+    IconPath: PrefabFolder.png
+    IconColor: {r: 0.20624185, g: 1, b: 0, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 58d129ce25738a14496b271760ffd60a
+    IconPath: DataGridFolder.png
+    IconColor: {r: 0, g: 0.9218221, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 99a2da4aab5cbd94c9dbb7df20b87d26
+    IconPath: CodeFolder.png
+    IconColor: {r: 0.4006691, g: 0, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 709f11a7f3c4041caa4ef136ea32d874
+    IconPath: ParameterFolder.png
+    IconColor: {r: 1, g: 0, b: 0, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  Entries: []
