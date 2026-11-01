@@ -45,4 +45,44 @@ MonoBehaviour:
     IconColor: {r: 1, g: 0, b: 0, a: 1}
     HighlightName: 0
     HighlightChildren: 0
+  - Guid: 5c70c22ddb9a043b8b30a7538d64a4c1
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0.24533153, g: 1, b: 0, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 72589719770b04ead999af902c0459f8
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0, g: 1, b: 0.488204, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: b725c631b97184544830dfadd6476140
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0, g: 1, b: 0.7193136, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: eb459a34669283f4ca4df897194543c6
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0, g: 0.94470406, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: ecd84bb8b7f156c438ec58ad4ae3d08a
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0, g: 0.77201605, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7e8c040bc74a6a145a870eb4ed03df43
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0, g: 0.42205977, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: d28f8d46cfc28c9488846d2bb7214e90
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0, g: 0.06287718, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: a908cce6aa3d8f74e954ad889e088948
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0.25833035, g: 0, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
   Entries: []
