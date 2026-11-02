@@ -7,6 +7,8 @@ public class RefillAmmo : MonoBehaviour
     public GameObject GlobalObject;
     public HandgunFire handgun;
 
+    public AudioSource refillFX;
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -14,6 +16,7 @@ public class RefillAmmo : MonoBehaviour
             GlobalObject.SetActive(true);
             handgun.FireTrue();
             ammoCounts.RefillAmmoCount();
+            refillFX.Play();
         }
     }
 }

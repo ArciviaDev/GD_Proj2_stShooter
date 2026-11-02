@@ -37,6 +37,6 @@ public class AmmoCounts : MonoBehaviour
     
     void UpdateAmmoText()
     {
-        ammoText.text = "Ammo: " + currentAmmo;
+        ammoText.text = "Ammo: " + currentAmmo + "/6";
     }
 }
