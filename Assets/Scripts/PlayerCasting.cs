@@ -8,6 +8,9 @@ public class PlayerCasting : MonoBehaviour
     [SerializeField] private float shootingRange = 20f;
     [SerializeField] private int damage = 1;
 
+    // Bullet impact VFX
+    [SerializeField] private GameObject impactVFX;
+
     public void Shoot()
     {
         RaycastHit hit;
@@ -21,7 +24,18 @@ public class PlayerCasting : MonoBehaviour
 
             Debug.Log("Hit: " + hit.collider.name);
 
-            EnemyManager enemy = hit.collider.GetComponentInParent<EnemyManager>();
+            // Spawn bullet impact VFX
+            GameObject impact = Instantiate(
+                impactVFX,
+                hit.point,
+                Quaternion.LookRotation(hit.normal)
+            );
+
+            // Remove impact VFX after 2 seconds
+            Destroy(impact, 2f);
+
+            EnemyManager enemy =
+                hit.collider.GetComponentInParent<EnemyManager>();
 
             if (enemy != null)
             {

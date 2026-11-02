@@ -10,6 +10,9 @@ public class HandgunFire : MonoBehaviour
     [SerializeField] AudioSource gunFire;
     [SerializeField] private GameObject handgun;
     [SerializeField] private bool canFire = true;
+    
+    [SerializeField] private GameObject muzzleFlashVFX;
+    [SerializeField] private Transform muzzlePoint;
 
     void Update()
     {
@@ -32,6 +35,16 @@ public class HandgunFire : MonoBehaviour
 
         // Shoot a ray toward the enemy
         playerCasting.Shoot();
+
+        // Spawn muzzle flash VFX
+        GameObject flash = Instantiate(
+            muzzleFlashVFX,
+            muzzlePoint.position,
+            muzzlePoint.rotation
+        );
+
+        // Remove VFX after a short time
+        Destroy(flash, 0.2f);
 
         gunFire.Play();
 
