@@ -8,16 +8,11 @@ public class HealthCount : MonoBehaviour
     [SerializeField] private TMP_Text HealthText;
     
     private int maxHealth = 3;
-    private int currentHealth = 3;
+    [SerializeField] int currentHealth = 3;
     
     void Start()
     {
         UpdateHealthText();
-    }
-
-    void Update()
-    {
-        CheckHealthCount();
     }
 
     public void TakenDamage()
@@ -43,5 +38,6 @@ public class HealthCount : MonoBehaviour
     void UpdateHealthText()
     {
         HealthText.text = "HP: " + currentHealth;
+        CheckHealthCount();
     }
 }

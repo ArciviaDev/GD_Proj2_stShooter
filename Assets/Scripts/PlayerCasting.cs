@@ -5,7 +5,7 @@ public class PlayerCasting : MonoBehaviour
     public static float distanceFromTarget;
     [SerializeField] private float toTarget;
 
-    [SerializeField] private float shootingRange = 20f;
+    [SerializeField] private float shootingRange = 30f;
     [SerializeField] private int damage = 1;
 
     // Bullet impact VFX
