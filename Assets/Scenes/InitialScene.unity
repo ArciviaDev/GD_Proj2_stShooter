@@ -1409,8 +1409,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2.2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!1 &80500106
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,8 +5244,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2.2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!1 &383207235
 GameObject:
   m_ObjectHideFlags: 0
@@ -8241,8 +8241,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.14, y: 2.3082693, z: 2}
+  m_Center: {x: 0, y: 1.1233536, z: 0}
 --- !u!1 &597064246
 GameObject:
   m_ObjectHideFlags: 0
@@ -18806,6 +18806,37 @@ PrefabInstance:
       addedObject: {fileID: 1679317196}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+--- !u!1 &1296351861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1296351862}
+  m_Layer: 0
+  m_Name: '@NAV'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1296351862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296351861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.33055, y: -0.00001, z: 21.69747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1303373545
 GameObject:
   m_ObjectHideFlags: 0
@@ -19332,7 +19363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   Player: {fileID: 1897138049}
   HealthText: {fileID: 1320069211}
-  currentHealth: 20
+  currentHealth: 3
 --- !u!1 &1320178117
 GameObject:
   m_ObjectHideFlags: 0
@@ -21328,8 +21359,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2.2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!1001 &1447554104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21547,8 +21578,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2.2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!1 &1456805867
 GameObject:
   m_ObjectHideFlags: 0
@@ -22595,8 +22626,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2.2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!1 &1502539909
 GameObject:
   m_ObjectHideFlags: 0
@@ -26603,8 +26634,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2.2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!1 &1757634621
 GameObject:
   m_ObjectHideFlags: 0
@@ -27289,7 +27320,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 42bc19467e1c81342902b1a0d238379f, type: 2}
     - target: {fileID: 919132149155446097, guid: 8f9696fb6017be144a307b6586855ac0, type: 3}
       propertyPath: m_Name
-      value: pistol2
+      value: pistol2Prop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31046,8 +31077,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2.2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!1 &2092845974
 GameObject:
   m_ObjectHideFlags: 0
@@ -31760,6 +31791,7 @@ SceneRoots:
   - {fileID: 849217506}
   - {fileID: 291029030}
   - {fileID: 706468304}
+  - {fileID: 1833804428}
   - {fileID: 1023938352}
   - {fileID: 2050776934}
   - {fileID: 1842499415}
@@ -31775,5 +31807,5 @@ SceneRoots:
   - {fileID: 1986692420}
   - {fileID: 1950222075}
   - {fileID: 784943860}
+  - {fileID: 1296351862}
   - {fileID: 1231641573}
-  - {fileID: 1833804428}
