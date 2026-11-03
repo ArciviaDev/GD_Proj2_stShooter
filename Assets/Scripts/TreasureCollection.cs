@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class TreasureCollection : MonoBehaviour
 {
+    public ChestCount chestCount;
+    
     // The guard protecting this treasure
     public EnemyAI[] guards;
 
@@ -11,6 +13,7 @@ public class TreasureCollection : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Treasure Collected!");
+            chestCount.CollectedChest();
 
             // Tell all guards protecting this treasure
             // to chase the player permanently

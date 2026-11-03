@@ -8,7 +8,7 @@ public class AmmoCounts : MonoBehaviour
     [SerializeField] private TMP_Text ammoText;
 
     private int maxAmmo = 6;
-    private int currentAmmo = 6;
+    private int currentAmmo = 0;
     
     void Start()
     {
