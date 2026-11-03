@@ -35,7 +35,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private GameObject impactVFX;
     
     [Header("Shooting Accuracy")]
-    [SerializeField] private float bulletSpread = 5f;
+    [SerializeField] private float bulletSpread = 3f;
     
     [Header("Shooting SFX")]
     [SerializeField] private AudioSource gunshotSFX;
@@ -204,6 +204,8 @@ public class EnemyAI : MonoBehaviour
 
     void Flee()
     {
+        agent.isStopped = false;
+        
         agent.speed = fleeSpeed;
 
         Vector3 direction =

@@ -1,9 +1,12 @@
+using StarterAssets;
 using UnityEngine;
 using TMPro;
 
 public class HealthCount : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject DeathScreen;
+    public StarterAssetsInputs StarterAssetsInputs;
     
     [SerializeField] private TMP_Text HealthText;
     
@@ -26,6 +29,8 @@ public class HealthCount : MonoBehaviour
         if (currentHealth < 1)
         {
             Player.SetActive(false);
+            DeathScreen.SetActive(true);
+            StarterAssetsInputs.UnlockCursor();
         }
     }
 

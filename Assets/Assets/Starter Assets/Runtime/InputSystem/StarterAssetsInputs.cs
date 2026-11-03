@@ -68,15 +68,52 @@ namespace StarterAssets
 			sprint = newSprintState;
 		}
 		
+		
+		private bool gameEnded = false;
+
+		// Called when the player dies or wins
+		public void UnlockCursor()
+		{
+			gameEnded = true;
+
+			cursorLocked = false;
+			cursorInputForLook = false;
+
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+
+			look = Vector2.zero;
+			move = Vector2.zero;
+		}
+
+		// Called when restarting the game
+		public void LockCursor()
+		{
+			gameEnded = false;
+
+			cursorLocked = true;
+			cursorInputForLook = true;
+
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+		}
+
+		// Prevents cursor locking after death/victory
 		private void OnApplicationFocus(bool hasFocus)
 		{
-			SetCursorState(cursorLocked);
+			if (hasFocus && !gameEnded)
+			{
+				SetCursorState(cursorLocked);
+			}
 		}
 
 		private void SetCursorState(bool newState)
 		{
+			if (gameEnded)
+				return;
+
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+			Cursor.visible = !newState;
 		}
 	}
-	
 }

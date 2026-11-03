@@ -5,6 +5,7 @@ public class ChestCount : MonoBehaviour
 {
     public ObjectiveScript objectives;
     public GameObject ChestTextContainer;
+    public EnemyAI[] EnemyAI;
     
     [SerializeField] private TMP_Text ChestCountText;
     
@@ -20,6 +21,13 @@ public class ChestCount : MonoBehaviour
     {
         if (currentChestCount >= 3)
         {
+            foreach (EnemyAI enemy in EnemyAI)
+            {
+                if (enemy != null)
+                {
+                    enemy.AllTreasuresCollected();
+                }
+            }
             objectives.ObjectiveChange();
             ChestTextContainer.SetActive(false);
         }
