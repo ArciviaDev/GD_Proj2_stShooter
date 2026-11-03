@@ -36,7 +36,12 @@ public class HealthCount : MonoBehaviour
 
     public void Healing()
     {
-        currentHealth = maxHealth;
+        if (currentHealth == maxHealth)
+        {
+            return;
+        }
+        
+        currentHealth += 1;
         UpdateHealthText();
     }
     

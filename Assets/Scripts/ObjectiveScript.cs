@@ -13,7 +13,7 @@ public class ObjectiveScript : MonoBehaviour
 
     public void ObjectiveChange()
     {
-        ObjectiveText.text = "Objective: Look for ammo around houses and  Kill all remaining Enemies";
+        ObjectiveText.text = "Objective: Look for ammo boxes and Kill all remaining Enemies";
     }
     
     void initialObjective()
