@@ -13,25 +13,41 @@ public class Door : MonoBehaviour {
     float DoorCloseAngle = 0.0f;
 	public AudioSource asource;
 	public AudioClip openDoor,closeDoor;
+	
+	private Quaternion originalRotation;
+	private Quaternion openRotation;
+	
 	// Use this for initialization
-	void Start () {
-		asource = GetComponent<AudioSource> ();
+	void Start()
+	{
+		asource = GetComponent<AudioSource>();
+
+		// Remember the rotation set in the Inspector
+		originalRotation = transform.localRotation;
+
+		// Calculate the open rotation relative to the original
+		openRotation = originalRotation * Quaternion.Euler(0, -90f, 0);
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update()
+	{
 		if (open)
 		{
-            var target = Quaternion.Euler (0, DoorOpenAngle, 0);
-            transform.localRotation = Quaternion.Slerp(transform.localRotation, target, Time.deltaTime * 5 * smooth);
-	
+			transform.localRotation = Quaternion.Slerp(
+				transform.localRotation,
+				openRotation,
+				Time.deltaTime * 5 * smooth
+			);
 		}
 		else
 		{
-            var target1= Quaternion.Euler (0, DoorCloseAngle, 0);
-            transform.localRotation = Quaternion.Slerp(transform.localRotation, target1, Time.deltaTime * 5 * smooth);
-	
-		}  
+			transform.localRotation = Quaternion.Slerp(
+				transform.localRotation,
+				originalRotation,
+				Time.deltaTime * 5 * smooth
+			);
+		}
 	}
 
 	public void OpenDoor(){

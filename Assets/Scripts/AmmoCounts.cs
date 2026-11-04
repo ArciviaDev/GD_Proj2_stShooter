@@ -23,6 +23,11 @@ public class AmmoCounts : MonoBehaviour
 
     public void CheckAmmoCount()
     {
+        if (currentAmmo == maxAmmo)
+        {
+            return;
+        }
+        
         if (currentAmmo < 1)
         {
             GlobalObject.SetActive(false);

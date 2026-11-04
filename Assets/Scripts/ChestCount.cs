@@ -6,6 +6,7 @@ public class ChestCount : MonoBehaviour
     public ObjectiveScript objectives;
     public GameObject ChestTextContainer;
     public EnemyAI[] EnemyAI;
+    public RefillAmmo[] refillAmmo;
     
     [SerializeField] private TMP_Text ChestCountText;
     
@@ -27,6 +28,10 @@ public class ChestCount : MonoBehaviour
                 {
                     enemy.AllTreasuresCollected();
                 }
+            }
+            foreach (RefillAmmo refill in refillAmmo)
+            {
+                refill.AllChestsAquired();
             }
             objectives.ObjectiveChange();
             ChestTextContainer.SetActive(false);
