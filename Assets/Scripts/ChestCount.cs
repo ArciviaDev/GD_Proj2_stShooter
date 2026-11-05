@@ -7,6 +7,7 @@ public class ChestCount : MonoBehaviour
     public GameObject ChestTextContainer;
     public EnemyAI[] EnemyAI;
     public RefillAmmo[] refillAmmo;
+    public PickUpGrenade[] pickUpGrenade;
     public GameObject enemiesKillCount;
     
     public PlayerChestCollideSFX playerChestCollideSFX;
@@ -36,6 +37,12 @@ public class ChestCount : MonoBehaviour
             {
                 refill.AllChestsAquired();
             }
+            
+            foreach (PickUpGrenade grenadeCount in pickUpGrenade)
+            {
+                grenadeCount.AllChestsAquired();
+            }
+
             objectives.ObjectiveChange();
             ChestTextContainer.SetActive(false);
             enemiesKillCount.SetActive(true);

@@ -4,6 +4,16 @@ public class PickUpGrenade : MonoBehaviour
 {
     [SerializeField] private WeaponSwapping weaponSwitching;
     [SerializeField] private GrenadeCounts grenadeCounts;
+    
+    void Start()
+    {
+        gameObject.SetActive(false);
+    }
+    
+    public void AllChestsAquired()
+    {
+        gameObject.SetActive(true);
+    }
 
     private void OnTriggerEnter(Collider other)
     {

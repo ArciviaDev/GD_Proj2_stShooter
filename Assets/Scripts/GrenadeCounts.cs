@@ -6,7 +6,7 @@ public class GrenadeCounts : MonoBehaviour
     [SerializeField] private TMP_Text grenadeText;
 
     private int grenadeCount = 0;
-
+    
     void Start()
     {
         UpdateGrenadeText();

@@ -13,11 +13,11 @@ public class ObjectiveScript : MonoBehaviour
 
     public void ObjectiveChange()
     {
-        ObjectiveText.text = "Objective: Look for ammo boxes and Kill all remaining Enemies";
+        ObjectiveText.text = "Objective: Look for ammo boxes and grenades to kill all remaining Enemies";
     }
     
     void initialObjective()
     {
-        ObjectiveText.text = "Objective: Collect All Tressure Chests, Avoid Enemies, And find a Gun/Grenade";
+        ObjectiveText.text = "Objective: Collect All Tressure Chests, Avoid Enemies, And find a Gun";
     }
 }
