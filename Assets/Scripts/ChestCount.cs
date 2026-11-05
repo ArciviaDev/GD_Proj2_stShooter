@@ -7,6 +7,9 @@ public class ChestCount : MonoBehaviour
     public GameObject ChestTextContainer;
     public EnemyAI[] EnemyAI;
     public RefillAmmo[] refillAmmo;
+    public GameObject enemiesKillCount;
+    
+    public PlayerChestCollideSFX playerChestCollideSFX;
     
     [SerializeField] private TMP_Text ChestCountText;
     
@@ -35,12 +38,14 @@ public class ChestCount : MonoBehaviour
             }
             objectives.ObjectiveChange();
             ChestTextContainer.SetActive(false);
+            enemiesKillCount.SetActive(true);
         }
     }
 
     public void CollectedChest()
     {
         currentChestCount++;
+        playerChestCollideSFX.PlaySFX();
         UpdateChestCount();
     }
 

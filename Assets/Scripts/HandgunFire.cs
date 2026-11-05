@@ -8,6 +8,8 @@ public class HandgunFire : MonoBehaviour
     public PlayerCasting playerCasting;
 
     [SerializeField] AudioSource gunFire;
+    [SerializeField] AudioSource PlayerIsHit;
+    
     [SerializeField] private GameObject handgun;
     [SerializeField] private bool canFire = true;
     
@@ -57,6 +59,11 @@ public class HandgunFire : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
 
         canFire = true;
+    }
+    
+    public void PlayerHit()
+    {
+        PlayerIsHit.Play();
     }
 
     public void FireTrue()

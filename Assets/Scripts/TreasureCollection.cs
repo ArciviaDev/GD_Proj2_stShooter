@@ -14,7 +14,7 @@ public class TreasureCollection : MonoBehaviour
         {
             Debug.Log("Treasure Collected!");
             chestCount.CollectedChest();
-
+            
             // Tell all guards protecting this treasure
             // to chase the player permanently
             foreach (EnemyAI guard in guards)

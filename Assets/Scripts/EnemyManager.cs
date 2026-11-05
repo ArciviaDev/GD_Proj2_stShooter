@@ -15,6 +15,10 @@ public class EnemyManager : MonoBehaviour
     private Material originalMaterial;
     private Coroutine flashCoroutine;
 
+    public AudioSource EnemyisHit;
+    
+    public EnemiesKillCount enemiesKillCount;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -26,6 +30,8 @@ public class EnemyManager : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        
+        EnemyisHit.Play();
 
         Debug.Log("Enemy Health: " + currentHealth);
 
@@ -60,7 +66,8 @@ public class EnemyManager : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy Died!");
-
+        
+        enemiesKillCount.EnemyKilled();
         Destroy(gameObject);
     }
 }

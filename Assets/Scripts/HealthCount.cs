@@ -7,6 +7,7 @@ public class HealthCount : MonoBehaviour
     public GameObject Player;
     public GameObject DeathScreen;
     public StarterAssetsInputs StarterAssetsInputs;
+    public HandgunFire PlayerHit;
     
     [SerializeField] private TMP_Text HealthText;
     
@@ -21,6 +22,7 @@ public class HealthCount : MonoBehaviour
     public void TakenDamage()
     {
         currentHealth--;
+        PlayerHit.PlayerHit();
         UpdateHealthText();
     }
 
