@@ -150,4 +150,9 @@ MonoBehaviour:
     IconColor: {r: 0, g: 1, b: 0.9813516, a: 1}
     HighlightName: 0
     HighlightChildren: 0
+  - Guid: 128983bb6635a8a4ea8642101636e3dc
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0, g: 1, b: 0.66614985, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
   Entries: []
