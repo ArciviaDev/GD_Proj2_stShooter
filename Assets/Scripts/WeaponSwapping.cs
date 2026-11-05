@@ -12,6 +12,10 @@ public class WeaponSwapping : MonoBehaviour
     [SerializeField] private GameObject GlobalObject;
     [SerializeField] private PlayerCasting playerCasting;
 
+    [Header("Weapon UI")]
+    [SerializeField] private GameObject handgunAmmoUI;
+    [SerializeField] private GameObject grenadeCountUI;
+
     private bool hasHandgun = false;
     private bool hasGrenade = false;
 
@@ -97,5 +101,9 @@ public class WeaponSwapping : MonoBehaviour
         GlobalObject.SetActive(handgunEquipped);
 
         playerCasting.enabled = handgunEquipped;
+        
+        // Enable/disable weapon UI
+        handgunAmmoUI.SetActive(handgunEquipped);
+        grenadeCountUI.SetActive(grenadeEquipped);
     }
 }

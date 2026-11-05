@@ -9,6 +9,8 @@ public class HealthCount : MonoBehaviour
     public StarterAssetsInputs StarterAssetsInputs;
     public HandgunFire PlayerHit;
     
+    public PlayerHealCollideSFX HealingSFX;
+    
     [SerializeField] private TMP_Text HealthText;
     
     private int maxHealth = 3;
@@ -44,6 +46,7 @@ public class HealthCount : MonoBehaviour
         }
         
         currentHealth += 1;
+        HealingSFX.PlaySFX();
         UpdateHealthText();
     }
     
