@@ -14468,6 +14468,7 @@ MonoBehaviour:
   - {fileID: 443931691}
   - {fileID: 706468307}
   - {fileID: 482948468}
+  - {fileID: 1069895437}
   pickUpGrenade:
   - {fileID: 1328128933}
   - {fileID: 2043584125}

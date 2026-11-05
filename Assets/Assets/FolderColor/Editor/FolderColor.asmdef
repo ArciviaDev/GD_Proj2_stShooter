@@ -1,8 +1,12 @@
 {
     "name": "FolderColor.Editor",
     "rootNamespace": "",
-    "references": ["GUID:448101435d471df4695cd9862af14003"],
-    "includePlatforms": [],
+    "references": [
+        "GUID:448101435d471df4695cd9862af14003"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
